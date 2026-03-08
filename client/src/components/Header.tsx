@@ -1,4 +1,4 @@
-import { Pencil, User, Github, Linkedin } from 'lucide-react';
+import { Home, User, Github, Linkedin } from 'lucide-react';
 import { useLocation } from 'wouter';
 import { useState, useEffect } from 'react';
 
@@ -24,8 +24,8 @@ export default function Header() {
       <a
         href="/"
         className="text-sm md:text-base font-medium text-white hover:opacity-60 transition-opacity tracking-wide"
+        aria-label="Home"
       >
-        Erick Austria
       </a>
 
       {/* Nav */}
@@ -36,7 +36,7 @@ export default function Header() {
           aria-label="Work"
           className={`transition-opacity hover:opacity-60 ${isAbout ? 'text-white' : 'text-[#FFCC00]'}`}
         >
-          <Pencil size={18} strokeWidth={1.8} />
+          <Home size={18} strokeWidth={1.8} />
         </a>
         <a
           href="/about"
